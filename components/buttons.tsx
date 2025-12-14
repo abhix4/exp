@@ -4,7 +4,7 @@ import { AlarmClock, AlarmClockCheck } from "lucide-react"
 import { motion } from "motion/react"
 import { useState } from "react"
 
-export default function Button() {
+export default function SpringButton() {
   const [alarm, setAlarm] = useState(false)
 
   return (
