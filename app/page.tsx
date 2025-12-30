@@ -1,5 +1,4 @@
-import SpringButton from "@/components/buttons";
-import Button from "@/components/buttons";
+import {SelectorButton, SpringButton} from "@/components/buttons";
 import ScrollingText from "@/components/scrolling-text";
 
 
@@ -12,9 +11,10 @@ export default function Home() {
          }}
    >
     {/* <MyGrid className="w-10 h-12"/> */}
-    <div className="w-6xl bg-white h-screen border border-black/5 p-6 flex  gap-20">
+    <div className="w-4xl bg-white h-screen border border-black/5 p-6 grid grid-cols-4">
       <SpringButton/>
       <ScrollingText/>
+      <SelectorButton/>
     </div>
    </div>
   );
