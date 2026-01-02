@@ -32,7 +32,7 @@ export default function ScrollingText({className}: {className?: string}){
             animate={{translateY: 0, opacity: 1}}
             exit={{ translateY:20, opacity: 0}}
             transition={{type:'spring', damping:30, stiffness: 800, duration: 0.2, delay: 0.2}}
-            className="text-lg font-medium"
+            className="text-sm font-medium"
             >
                 {
                     texts[curr]
