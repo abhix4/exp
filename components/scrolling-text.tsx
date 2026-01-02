@@ -28,9 +28,9 @@ export default function ScrollingText({className}: {className?: string}){
             <AnimatePresence mode="wait">
             <motion.div 
             key={curr}
-            initial={{translateY: -20, opacity: 0}}
+            initial={{translateY: -30, opacity: 0.5}}
             animate={{translateY: 0, opacity: 1}}
-            exit={{ translateY:20, opacity: 0}}
+            exit={{ translateY:30, opacity: 0.5}}
             transition={{type:'spring', damping:30, stiffness: 800, duration: 0.2, delay: 0.2}}
             className="text-sm font-medium"
             >
