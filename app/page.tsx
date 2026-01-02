@@ -36,7 +36,7 @@ export default function Home() {
          }}
    >
     {/* <MyGrid className="w-10 h-12"/> */}
-    <div className="w-4xl bg-neutral-50 h-screen border border-black/5 p-6 grid grid-cols-4">
+    <div className="w-4xl bg-white h-screen border border-black/5 p-6 grid grid-cols-4">
       {
         components.map((comp, index) => (
           <div key={index} className="flex flex-col items-center gap-16 h-36">
