@@ -57,7 +57,7 @@ export function SelectorButton(){
 {
       isVisible && (
         <>
-          <motion.button className="absolute -top-5 -left-10 p-2 border-[0.5px] rounded-full border-black/10 h-fit w-fit cursor-pointer "
+          <motion.button className="absolute -top-5 bg-white -left-10 p-2 border-[0.5px] rounded-full border-black/10 h-fit w-fit cursor-pointer "
       key={1}
       whileHover={{scale:1.10}}
       
@@ -69,7 +69,7 @@ export function SelectorButton(){
         <Music4 size={16} />
       </motion.button>
 
-       <motion.button className="absolute -top-10 right-0 p-2 border-[0.5px] rounded-full border-black/10 h-fit w-fit cursor-pointer"
+       <motion.button className="absolute -top-10 bg-white  right-0 p-2 border-[0.5px] rounded-full border-black/10 h-fit w-fit cursor-pointer"
       key={2}  
       whileHover={{scale:1.10}}
         initial={{translateY:30, opacity:0}}
@@ -80,7 +80,7 @@ export function SelectorButton(){
         <Sprout size={16}/>
       </motion.button>
 
-     <motion.button className="absolute -top-5 -right-10 p-2 border-[0.5px] rounded-full border-black/10 h-fit w-fit cursor-pointer"
+     <motion.button className="absolute -top-5 bg-white  -right-10 p-2 border-[0.5px] rounded-full border-black/10 h-fit w-fit cursor-pointer"
     key={3}
       whileHover={{scale:1.10}}
      initial={{translateY:20, translateX:-10, opacity:0}}
