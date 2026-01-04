@@ -5,7 +5,7 @@ import ProgressBar from "@/components/progess-svg";
 import ScrollingText from "@/components/scrolling-text";
 import Sign from "@/components/sign";
 import SplitText from "@/components/split-text";
-import Tabs from "@/components/tabs";
+import { UnderlineTabs, BgTabs, HoverBgTabs } from "@/components/tabs";
 import Text from "@/components/text";
 
 export default function Home() {
@@ -24,7 +24,7 @@ export default function Home() {
     },
     {
       title: "Icon",
-      comp: <Tabs />,
+      comp: <UnderlineTabs />,
     },
     {
       title: "Icon",
@@ -37,6 +37,14 @@ export default function Home() {
     {
       title: "outline text",
       comp: <OutlineText />,
+    },
+    {
+      title: "Tabs BG",
+      comp: <BgTabs />,
+    },
+    {
+      title: "Tabs BG",
+      comp: <HoverBgTabs />,
     },
   ];
 
@@ -60,7 +68,7 @@ export default function Home() {
   return (
     <div className="relative w-4xl h-screen  mx-auto ">
       <div className="border border-b-0 border-t-0 py-6 text-xl px-6 border-l-[#FE4400] uppercase border-r-[#FE4400]">
-        Archives <span className="text-xs text-neutral-400">JAN 3, 2026</span>
+        Archives <span className="text-xs text-neutral-400">JAN 4, 2026</span>
       </div>
 
       <div

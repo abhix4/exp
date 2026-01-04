@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-export default function Tabs() {
+export function UnderlineTabs() {
   const [tab, setTab] = useState(1);
 
   return (
@@ -29,6 +29,71 @@ export default function Tabs() {
               }}
             />
           )}
+        </button>
+      ))}
+    </div>
+  );
+}
+
+export function BgTabs() {
+  const [tab, setTab] = useState(0);
+  const list = ["Home", "Profile", "Settings"];
+
+  return (
+    <div className="flex gap-1 relative">
+      {list.map((item, index) => (
+        <button
+          key={item}
+          onClick={() => setTab(index)}
+          className="relative px-2 py-1 text-sm rounded-sm cursor-pointer"
+        >
+          {tab === index && (
+            <motion.div
+              layoutId="bg"
+              className="absolute inset-0 bg-black/10 rounded-sm"
+              transition={{
+                type: "spring",
+                stiffness: 500,
+                damping: 30,
+              }}
+            />
+          )}
+
+          <span className="relative z-10">{item}</span>
+        </button>
+      ))}
+    </div>
+  );
+}
+
+export function HoverBgTabs() {
+  const [hovered, setHovered] = useState<number | null>(null);
+
+  const list = ["Home", "Profile", "Settings"];
+
+  return (
+    <div className="relative flex ">
+      {list.map((item, index) => (
+        <button
+          key={item}
+          onMouseEnter={() => setHovered(index)}
+          onMouseLeave={() => setHovered(null)}
+          className="relative px-3 py-1.5 text-sm rounded-md cursor-pointer"
+        >
+          {/* layout is only used for one element */}
+          {hovered === index && (
+            <motion.div
+              layoutId="hover-bg"
+              className="absolute inset-0 rounded-md bg-orange-500/10"
+              transition={{
+                type: "spring",
+                stiffness: 500,
+                damping: 30,
+              }}
+            />
+          )}
+
+          <span className="relative z-10">{item}</span>
         </button>
       ))}
     </div>
