@@ -1,8 +1,10 @@
 import { SelectorButton, SpringButton } from "@/components/buttons";
 import Icon from "@/components/icon";
+import OutlineText from "@/components/outline-text";
 import ProgressBar from "@/components/progess-svg";
 import ScrollingText from "@/components/scrolling-text";
 import Sign from "@/components/sign";
+import SplitText from "@/components/split-text";
 import Tabs from "@/components/tabs";
 import Text from "@/components/text";
 
@@ -27,6 +29,14 @@ export default function Home() {
     {
       title: "Icon",
       comp: <ProgressBar />,
+    },
+    {
+      title: "split text",
+      comp: <SplitText />,
+    },
+    {
+      title: "outline text",
+      comp: <OutlineText />,
     },
   ];
 
