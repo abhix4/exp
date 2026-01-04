@@ -1,10 +1,11 @@
 import { SelectorButton, SpringButton } from "@/components/buttons";
-import Icon from "@/components/icon";
+import { AlarmIcon, NextIcon } from "@/components/icon";
 import OutlineText from "@/components/outline-text";
 import ProgressBar from "@/components/progess-svg";
 import ScrollingText from "@/components/scrolling-text";
 import Sign from "@/components/sign";
 import SplitText from "@/components/split-text";
+import { Button } from "@/components/static-button";
 import { UnderlineTabs, BgTabs, HoverBgTabs } from "@/components/tabs";
 import Text from "@/components/text";
 
@@ -46,12 +47,20 @@ export default function Home() {
       title: "Tabs BG",
       comp: <HoverBgTabs />,
     },
+    {
+      title: "Tabs BG",
+      comp: <Button />,
+    },
   ];
 
   const icons = [
     {
       title: "Icon",
-      comp: <Icon />,
+      comp: <AlarmIcon />,
+    },
+    {
+      title: " next icons",
+      comp: <NextIcon />,
     },
   ];
 
